@@ -526,3 +526,59 @@ body {
     transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(33, 150, 243, 0.4);
 }
+
+.together-section{
+    padding:80px 20px;
+    background:linear-gradient(135deg,#dbeafe,#bfdbfe);
+    text-align:center;
+}
+
+.together-section h2{
+    font-size:2.5rem;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+.together-card{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+}
+
+.together-card h3{
+    color:#2563eb;
+    margin-bottom:30px;
+    font-size:2rem;
+}
+
+.counter{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.counter div{
+    min-width:120px;
+}
+
+.counter span{
+    display:block;
+    font-size:3rem;
+    font-weight:bold;
+    color:#1d4ed8;
+}
+
+.counter p{
+    font-size:1.1rem;
+    color:#555;
+}
+
+.since-text{
+    margin-top:30px;
+    font-size:1.2rem;
+    color:#444;
+}
