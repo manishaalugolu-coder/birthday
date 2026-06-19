@@ -15,17 +15,24 @@
 
 <body>
    <div id="lockScreen">
-    <div class="lock-card">
+    <!-- Lock Screen Content Here -->
+      <div class="lock-container">
 
-        <img src="images/img.png" class="lock-photo">
+    <div class="profile-photo">
+        <img src="images/img.png" alt="Birthday Boy">
+    </div>
 
-        <h1>❤️ Birthday Surprise 🥰 </h1>
+    <div class="lock-box">
 
-        <p>Enter the Secret Code 💙</p>
+        <h1>💖 Birthday Surprise 💖</h1>
+        <p>Only the most special person can unlock this 💕</p>
+
+        <p>Enter the Secret Code</p>
 
         <input type="password" id="pinDisplay" readonly>
 
         <div class="keypad">
+
             <button onclick="addNumber('1')">1</button>
             <button onclick="addNumber('2')">2</button>
             <button onclick="addNumber('3')">3</button>
@@ -41,13 +48,16 @@
             <button onclick="clearPin()">⌫</button>
             <button onclick="addNumber('0')">0</button>
             <button onclick="checkPin()">🔓</button>
+
         </div>
 
         <p id="pinMessage"></p>
 
     </div>
-</div>
 
+</div>
+   </div>
+   
 <div id="mainContent" style="display:none;">
     <!-- Floating Background Particles -->
     <div class="particles" id="particles"></div>
