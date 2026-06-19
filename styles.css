@@ -677,3 +677,103 @@ body {
     font-size: 18px;
     box-shadow: 0 5px 15px rgba(59, 130, 246, 0.15);
 }
+
+#lockScreen{
+    position:fixed;
+    inset:0;
+    z-index:99999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        135deg,
+        #4facfe 0%,
+        #00c6ff 50%,
+        #43e97b 100%
+    );
+}
+
+.lock-card{
+    width:380px;
+    padding:35px;
+    text-align:center;
+
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(18px);
+
+    border-radius:30px;
+
+    box-shadow:
+    0 10px 40px rgba(0,0,0,.2);
+}
+
+.lock-photo{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+
+    border-radius:50%;
+    border:5px solid white;
+
+    margin-bottom:20px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.2);
+}
+
+.lock-card h1{
+    color:white;
+    margin-bottom:10px;
+}
+
+.lock-card p{
+    color:white;
+}
+
+#pinDisplay{
+    width:180px;
+    height:55px;
+
+    border:none;
+    border-radius:15px;
+
+    margin:20px 0;
+
+    text-align:center;
+    font-size:24px;
+}
+
+.keypad{
+    display:grid;
+    grid-template-columns:repeat(3,80px);
+    gap:10px;
+    justify-content:center;
+}
+
+.keypad button{
+    width:80px;
+    height:60px;
+
+    border:none;
+    border-radius:15px;
+
+    background:#1976d2;
+    color:white;
+
+    font-size:22px;
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.keypad button:hover{
+    transform:scale(1.08);
+    background:#0d47a1;
+}
+
+#pinMessage{
+    margin-top:15px;
+    font-weight:bold;
+}
