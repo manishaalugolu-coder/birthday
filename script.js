@@ -325,7 +325,50 @@ function clearGuestBook() {
 
     alert("🗑 Message Cleared!");
 }
-saveBtn.innerHTML = "💖 Saved!";
-setTimeout(() => {
-    saveBtn.innerHTML = "💾 Save Message";
-}, 1500);
+if(saveBtn){
+    saveBtn.innerHTML = "💖 Saved!";
+
+    setTimeout(() => {
+        saveBtn.innerHTML = "💾 Save Message";
+    }, 1500);
+}
+
+let enteredPin = "";
+
+function addNumber(num){
+
+    if(enteredPin.length < 4){
+
+        enteredPin += num;
+
+        document.getElementById("pinDisplay").value =
+        "*".repeat(enteredPin.length);
+    }
+}
+
+function clearPin(){
+
+    enteredPin = enteredPin.slice(0,-1);
+
+    document.getElementById("pinDisplay").value =
+    "*".repeat(enteredPin.length);
+}
+
+function checkPin(){
+
+    if(enteredPin === "2106"){
+
+        document.getElementById("lockScreen").style.display="none";
+
+        document.getElementById("mainContent").style.display="block";
+
+    }else{
+
+        document.getElementById("pinMessage").innerHTML =
+        "❌ Wrong PIN";
+
+        enteredPin = "";
+
+        document.getElementById("pinDisplay").value = "";
+    }
+}
